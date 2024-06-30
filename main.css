@@ -1,0 +1,24 @@
+.contact-button {
+    background-color: #4CAF50; /* Green background color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.contact-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.hero-container {
+    background-image: url("../images/6009999_Animal_Nature_3840x2160.mp4");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 20px 0;
+}
