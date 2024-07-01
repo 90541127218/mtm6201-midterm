@@ -16,6 +16,32 @@ body {
     }
 }
 
+@keyframes pulsate-fwd {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+  
+
 * {
   font-family: "Open Sans", sans-serif;
   margin: 0;
@@ -98,8 +124,17 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline; /* Underline on hover */
+    background-color: #9896F0;
+    color: #fff;
+    position: relative;
+    border-radius: 30px;
 }
+
+
+button:hover {
+    animation: pulsate-fwd 0.5s ease-in-out infinite both; /* Underline on hover */
+}
+
 
 .hero-container {
     background-image: linear-gradient(180deg, #9896F0, #040B11);
@@ -115,6 +150,10 @@ nav ul li a:hover {
     padding: 1rem;
     margin: auto;
     color: #fff;
+}
+
+.hero-content h1, h2, p {
+    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 .hero-content p {
@@ -227,6 +266,10 @@ color: #fff;
     flex-direction: column;
     justify-content: center;
     color: #fff;
+}
+
+.works-hero-content h1 {
+    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 .works-section {
