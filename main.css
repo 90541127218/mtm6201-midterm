@@ -27,7 +27,7 @@ body {
 h1 {
     font-size: 80px;
     font-weight: 800;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.8px;
 }
 
 h2 {
@@ -137,12 +137,15 @@ nav ul li a:hover {
 .header2 h1{
     font-size: 60px;
     font-weight: 800;
-    letter-spacing: 0.25px; 
 }
 
 .header2 p{
     font-size: 24px;
     font-weight: 400;
+    letter-spacing: 0.2px;
+    text-align: justify;
+    padding-top: 18px;
+    padding-bottom: 18px;
 }
 
 .work-grid {
@@ -195,4 +198,33 @@ color: #fff;
 
 .social-links img {
     transform: scale(1.2); /* scale the image down to 50% of its original size */
+}
+
+
+
+
+
+
+
+
+
+.works-hero-container {
+    background-image: url("images/Work-Banner.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    text-align: left;
+}
+
+.works-hero-content {
+    position: relative;
+    text-align: left;
+    padding: 1rem;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
 }
