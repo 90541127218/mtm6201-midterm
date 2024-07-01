@@ -206,7 +206,7 @@ color: #fff;
 
 
 
-
+/* WORKS */
 
 .works-hero-container {
     background-image: url("images/Work-Banner.jpg");
@@ -227,4 +227,25 @@ color: #fff;
     flex-direction: column;
     justify-content: center;
     color: #fff;
+}
+
+.works-section {
+    background-image: url("images/Section-1.svg");
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    text-align: center;
+}
+
+.works-row {
+    position: relative;
+    text-align: left;
+    padding: 1rem;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    justify-content: space-evenly;  
+    text-align: justify;
 }
